@@ -1,0 +1,49 @@
+body {
+    background: brown;
+    width: 100% ;
+}
+.conteúdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.laranja {
+    color: orange;
+}
+.vermelha {
+    color: red;
+}
+.amarela {
+    color: orangered;
+}
+li {
+    margin-top: 1rem;
+}
+#lista {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    width: 40%;
+    padding: 2rem;
+    background-color: white;
+}
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    background: red;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+li {
+    font-size: 1.1rem;
+    margin-top: 1.7rem;
+}
+header {
+    font-size: 1.4rem;
+}
+.estilo {
+    text-decoration: line-through;
+}
