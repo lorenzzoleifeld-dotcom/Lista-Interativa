@@ -4,7 +4,7 @@ const lista = document.getElementById("lista");
 botao.addEventListener("click", () => {
     if(entrada.value === "")
         return;
-    const listItem = document.createElement("li"); alert("Você criou e adicionou um novo elemento à lista!")
+    const listItem = document.createElement("li"); alert("Você criou e adicionou um elemento à lista!")
     listItem.textContent = entrada.value;
     lista.appendChild(listItem);
     listItem.addEventListener("click", () => {
@@ -15,4 +15,6 @@ botao.addEventListener("click", () => {
             listItem.classList.add("estilo");
         }
     })
+        
+      
 })
