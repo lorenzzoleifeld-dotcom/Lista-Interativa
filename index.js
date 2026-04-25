@@ -1,20 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
 const botao = document.querySelector(".btn");
-const entrada = document.getElementById("input");
+const entrada = document.querySelector(".input")
 const lista = document.getElementById("lista");
 botao.addEventListener("click", () => {
     if(entrada.value === "")
         return;
-    const listItem = document.createElement("li"); alert("Você criou e adicionou um elemento à lista!")
-    listItem.textContent = entrada.value;
-    lista.appendChild(listItem);
-    listItem.addEventListener("click", () => {
-        if(listItem.classList.contains("estilo")) {
-            lista.removeChild(listItem);
-            alert("Você removeu seu novo elemento da lista!")
-        } else {
-            listItem.classList.add("estilo");
+    const novoItem = document.createElement("li");
+    novoItem.textContent = entrada.value;
+    lista.appendChild(novoItem);
+    lista.addEventListener("click", (event) => {
+        const itemRemovido = event.target.closest("li")
+        if(itemRemovido) {
+            lista.removeChild(itemRemovido);
         }
     })
-        
-      
+})
 })
