@@ -8,11 +8,12 @@ botao.addEventListener("click", () => {
     const novoItem = document.createElement("li");
     novoItem.textContent = entrada.value;
     lista.appendChild(novoItem);
-    lista.addEventListener("click", (event) => {
+   
+        })
+     lista.addEventListener("click", (event) => {
         const itemRemovido = event.target.closest("li")
         if(itemRemovido) {
             lista.removeChild(itemRemovido);
         }
-    })
 })
 })
